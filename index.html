@@ -14,7 +14,14 @@
    <!-- Site Title -->
    <title>hackX 2019 | Inter-University Model Startup battle</title>
 
-    
+    <script>
+    document.getElementsByTagName("html")[0].className += " js";
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
    <!-- CSS
          ================================================== -->
    <!-- Bootstrap -->
@@ -64,41 +71,44 @@
       
                   <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
                </button>
-               <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="dropdown nav-item">
-                        <a href="#site_about" >About<i class="fa fa-angle-down"></i></a>
-                       
-                     </li>
-                     <li class="dropdown nav-item ">
-                        <a href="#site_about"  >Event<i class="fa fa-angle-down"></i></a>
-                        
-                     </li>
-                     <li class="nav-item dropdown">
-                        <a href="#particles-js" >Time Line<i class="fa fa-angle-down"></i></a>
-                      
-                     </li>
-                     <li class="nav-item dropdown">
-                        <a href="#site_awards" >Awards<i class="fa fa-angle-down"></i></a>
-                       
-                     </li>
-                     <li class="nav-item dropdown">
-                        <a href="#site_partners"> Partners<i class="fa fa-angle-down"></i></a>
-                       
-                     </li>
-                      <li class="nav-item dropdown">
-                        <a href="#site_reachus"> Reach Us<i class="fa fa-angle-down"></i></a> 
-                       
-                     </li>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="#site_about">About <i class="fa fa-angle-down"></i></a>
 
-                     <li class="header-ticket nav-item">
-                        <a class="ticket-btn btn" href="login.html"> LOG IN
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-         </div><!-- container end-->
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#ts-event">Event <i class="fa fa-angle-down"></i></a>
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#particles-js">Time Line <i class="fa fa-angle-down"></i></a>
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#site_awards">Awards <i class="fa fa-angle-down"></i></a>
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#site_partners"> Partners <i class="fa fa-angle-down"></i></a>
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#site_reachus"> Reach Us <i class="fa fa-angle-down"></i></a>
+
+                </li>
+
+                <li class="header-ticket nav-item">
+                  <a class="ticket-btn btn" href="/login"> LOG IN
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+      </div><!-- container end-->
       </header>
       <!--/ Header end -->
       <!-- banner start-->
@@ -264,7 +274,7 @@
       </section>
       <!-- ts funfact end-->
          <!-- ts experience start-->
-          <section id="ts-experiences" class="ts-experiences">
+          <section id="ts-event" class="ts-experiences">
             <div class="container-fluid">
                <div class="row">
                <div class="col-lg-8 mx-auto" style="background:#101010;">
@@ -422,9 +432,9 @@
                   <div class="tab-content schedule-tabs schedule-tabs-item">
                      <div role="tabpanel" class="tab-pane active" id="date1">
                         <div class="row">
-                           <div class="col-lg-6">
-                              <div class="schedule-listing-item schedule-left wow fadeInDownBig">
-                                 <img class="schedule-slot-speakers" src="images/timeline/icon1.png" alt="">
+                           <div class="col-lg-6" >
+                              <div class="schedule-listing-item schedule-left wow fadeInDownBig" >
+                                 
                                  <span class="schedule-slot-time">AUGUST 25<sup>th</sup></span>
                                  <h3 class="schedule-slot-title">hackX Ideation - initial pitch</h3>
                                 <h4 class="schedule-slot-name">@ Department of industrial Management</h4>
@@ -432,11 +442,12 @@
                                     How you transform your business technolog consumer habits industry dynamics change
                                     Find out from those leading the charge How you
                                  </p>
+                                
                               </div>
                            </div><!-- col end-->
                            <div class="col-lg-6">
-                              <div class="schedule-listing-item schedule-right wow fadeInDownBig" data-wow-delay="100ms">
-                                 <img class="schedule-slot-speakers" src="images/timeline/icon2.png" alt="">
+                              <div class="schedule-listing-item schedule-right wow fadeInDownBig" data-wow-delay="100ms" >
+                                 
                                  <span class="schedule-slot-time">AUGUST 1<sup>st</sup> - 21<sup>st</sup></span>
                                  <h3 class="schedule-slot-title">Registration</h3>
                                 <h4 class="schedule-slot-name">@ via hackx.lk</h4>
@@ -445,10 +456,11 @@
                                     Find out from those leading the charge How you
                                  </p>
                               </div>
+                             
                            </div><!-- col end-->
                            <div class="col-lg-6">
                               <div class="schedule-listing-item schedule-left wow fadeInDownBig">
-                                 <img class="schedule-slot-speakers" src="images/timeline/icon3.png" alt="">
+                                 
                                  <span class="schedule-slot-time">SEPTEMBER 4<SUP>th</SUP> - 11<sup>th</sup></span>
                                  <h3 class="schedule-slot-title">Intermediate Webinars</h3>
                                  <h4 class="schedule-slot-name">@ via Livestream</h4>
@@ -460,7 +472,7 @@
                            </div><!-- col end-->
                            <div class="col-lg-6">
                               <div class="schedule-listing-item schedule-right wow fadeInDownBig">
-                                 <img class="schedule-slot-speakers" src="images/timeline/icon4.png" alt="">
+                                 
                                  <span class="schedule-slot-time">SEPTEMBER 1<SUP>st</sup></span>
                                  <h3 class="schedule-slot-title">Business Workshop</h3>
                                 <h4 class="schedule-slot-name">@ hatch. works</h4>
@@ -472,7 +484,7 @@
                            </div><!-- col end-->
                             <div class="col-lg-6">
                               <div class="schedule-listing-item schedule-left wow fadeInDownBig">
-                                 <img class="schedule-slot-speakers" src="images/timeline/icon5.png" alt="">
+                                 
                                  <span class="schedule-slot-time">SEPTEMBER 22<sup>nd</sup></span>
                                  <h3 class="schedule-slot-title">hackX finals</h3>
                                 <h4 class="schedule-slot-name">@ Dialog Axiata Auditorium</h4>
@@ -484,7 +496,7 @@
                            </div><!-- col end-->
                            <div class="col-lg-6">
                               <div class="schedule-listing-item schedule-right wow fadeInDownBig">
-                                 <img class="schedule-slot-speakers" src="images/timeline/icon6.png" alt="">
+                                
                                  <span class="schedule-slot-time">SEPTEMBER 8<sup>th</sup> </span>
                                  <h3 class="schedule-slot-title">Technical Workshop</h3>
                                 <h4 class="schedule-slot-name">@ hatch. works</h4>
@@ -1533,7 +1545,12 @@
     <script type="text/javascript" src="js/particles.min.js"></script>
 
     <script type="text/javascript" src="js/app.js"></script>
-
+   
+    <script>
+      $('body').scrollspy({
+        target: '.navbar'
+      })
+    </script>
     
 
    </div>

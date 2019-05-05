@@ -1666,10 +1666,10 @@ img.pull-right {
     background-image: -webkit-linear-gradient(315deg, #82e182 0%, #0acbf5 100%);
     background-image: -o-linear-gradient(315deg, #82e182 0%, #0acbf5 100%);
     background-image: linear-gradient(135deg, #82e182 0%, #0acbf5 100%); }
-  .schedule-tabs-item .schedule-listing-item:before {
+.schedule-tabs-item .schedule-listing-item:before {
     position: absolute;
     top: -30px;
-    width: 2px;
+    width: 4px;
     height: 100%;
     content: '';
     background: #f1f0f6;
@@ -1677,39 +1677,57 @@ img.pull-right {
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease; }
-  .schedule-tabs-item .schedule-listing-item:after {
+    -ms-transition: all 0.4s ease; } 
+
+   
+    .schedule-tabs-item .schedule-listing-item:after {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     content: '';
-    border: 2px solid #E89E3E;
+    top: 50%; 
+    background:#fff;
+    border: 2px solid #fff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -ms-border-radius: 50%;
-    top: 80px;
-    background: #fff; }
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+      ;}
+
+
   .schedule-tabs-item .schedule-listing-item.schedule-left {
-    padding: 60px 125px 20px 0;
+    padding:60px 30px 30px 0px;
     text-align: right;
-    margin-top: 245px; }
+    margin-top: 245px; 
+    background-image : url(images/timeline/icon2.png) ;
+    }
     .schedule-tabs-item .schedule-listing-item.schedule-left .schedule-slot-speakers {
       right: 30px; }
     .schedule-tabs-item .schedule-listing-item.schedule-left:before {
       right: -17px; }
     .schedule-tabs-item .schedule-listing-item.schedule-left:after {
-      right: -21px; }
+      right: -25px; }
   .schedule-tabs-item .schedule-listing-item.schedule-right {
-    padding: 60px 20px 0px 125px;
-    text-align: left; }
+    padding: 60px 20px 0px 30px;
+    text-align: left; 
+    background-image : url(images/timeline/icon1.png);
+    }
     .schedule-tabs-item .schedule-listing-item.schedule-right .schedule-slot-speakers {
       left: 30px; }
     .schedule-tabs-item .schedule-listing-item.schedule-right:before {
-      left: -15px; }
+      left: -17px; }
     .schedule-tabs-item .schedule-listing-item.schedule-right:after {
-      left: -19px; }
+      left: -25px; }
   .schedule-tabs-item .schedule-listing-item:hover:before {
-    background: #E89E3E; }
+    background: #E89E3E;
+    border: 2px solid #E89E3E; }
+    .schedule-tabs-item .schedule-listing-item:hover:after {
+      background: #E89E3E; 
+      border: 2px solid #E89E3E;}
 
 /*====================================
       ts-pricing
@@ -3195,3 +3213,6 @@ faq-item
     font-weight: 700;
     margin-top: 2px; }
 
+    .nav-link.active {
+      color: #E89E3E !important;
+    }
