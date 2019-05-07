@@ -71,3 +71,10 @@ $headers = 'From: '.$email_from."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
 
+<?php
+header("Location: index.html", true, 301);
+echo "<script type=\"text/javascript\">window.alert('Response Successfully Recieved!');
+window.location.href = '/index.html';</script>"; 
+exit();
+}
+?>
