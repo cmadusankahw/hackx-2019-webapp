@@ -3201,7 +3201,7 @@ faq-item
   cursor: pointer;
   height: 44px;
   position: fixed;
-  right: 14px;
+  left: 20px;
   text-align: center;
   width: 44px;
   z-index: 9;
