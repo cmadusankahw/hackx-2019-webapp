@@ -70,12 +70,11 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
- 
-<!-- include your own success html here -->
- 
-Thank you for contacting hackX Team. We will be in touch with you very soon.
- 
+
 <?php
- 
+header("Location: index.html", true, 301);
+echo "<script type=\"text/javascript\">window.alert('Response Successfully Recieved!');
+window.location.href = '/index.html';</script>"; 
+exit();
 }
 ?>
