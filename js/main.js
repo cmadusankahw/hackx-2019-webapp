@@ -62,11 +62,11 @@ setInterval(function() {
 
    }
 
-	// if($('.navbar li.dropdown ul').length){
-	// 	 //Disable dropdown parent link
-   //     $('.navbar .navbar-nav li.dropdown > a').on('click', function(e) {
-	// 		e.preventDefault();
-	// 	});
+	//if($('.navbar li.dropdown ul').length){
+	// 	 Disable dropdown parent link
+      // $('.navbar .navbar-nav li.dropdown > a').on('click', function(e) {
+		//	e.preventDefault();
+	//	});
 	// }
 
 

@@ -142,7 +142,7 @@ a.read-more:hover {
   color: #222; }
 
   #slideshow {
-    position: absolute;
+    position: center center;
     width:100%;
     height:100%;
 
@@ -714,6 +714,55 @@ img.pull-right {
       color: #28A79C; }
     .countdown .counter-item:nth-of-type(4) i {
       color: #E89E3E; }
+     
+      @media screen and (max-width: 500px) {
+        .countdown {
+          margin-bottom: 30px;
+           max-width: 100%;}
+          .countdown .counter-item {
+            display: inline-block;
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -ms-border-radius: 50%;
+            text-align: center;
+            color: #fff;
+            margin-right: 9px;
+            padding: 17px 0;
+            position: relative; }
+            .countdown .counter-item i {
+              font-size: 52px;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0;
+              top: 0; }
+            .countdown .counter-item:last-of-type {
+              margin-right: 0; }
+            .countdown .counter-item span {
+              font-size: 12px;
+              display: block;
+              line-height: 9px;
+              letter-spacing: .48px;
+              font-weight: 700; }
+            .countdown .counter-item .smalltext {
+              font-size: 7px;
+              text-transform: uppercase;
+              letter-spacing: 1.2px; }
+            .countdown .counter-item:nth-of-type(1) i {
+              color: #28A79C }
+            .countdown .counter-item:nth-of-type(2) i {
+              color: #E89E3E;
+              top: 2px;
+              -webkit-transform: rotate(-148deg);
+              -ms-transform: rotate(-148deg);
+              transform: rotate(-148deg); }
+            .countdown .counter-item:nth-of-type(3) i {
+              color: #28A79C; }
+            .countdown .counter-item:nth-of-type(4) i {
+              color: #E89E3E; }
+      }
 
 .ts-count-down {
   padding: 0;
@@ -766,6 +815,16 @@ img.pull-right {
     width: 725px;
     right: 0;
     height: 725px; }
+   
+    @media screen and (max-width: 800px) {
+      .hero-area.centerd-item .banner-item:after {
+        visibility: hidden;
+        position: absolute;
+        background: rgba(10,10,10,0.6);
+        content: '';
+        }
+    }
+
   .hero-area.centerd-item .banner-item .banner-content-wrap {
     padding: 117px;
     z-index: 1;
@@ -1595,7 +1654,7 @@ img.pull-right {
 
 .ts-schedule-nav {
   text-align: center;
-  margin-bottom: 90px; }
+  margin-bottom: 30px; }
   .ts-schedule-nav ul {
     border: none; }
     .ts-schedule-nav ul li {
@@ -1701,7 +1760,7 @@ img.pull-right {
 
 
   .schedule-tabs-item .schedule-listing-item.schedule-left {
-    padding:30px 30px 30px 60px;
+    padding:60px 30px 30px 30px;
     text-align: right;
     }
     .schedule-tabs-item .schedule-listing-item.schedule-left .schedule-slot-speakers {
@@ -1715,6 +1774,10 @@ img.pull-right {
     text-align: left; 
     margin-top: 245px; 
     }
+    @media screen and (max-width: 991px) {
+    .schedule-tabs-item .schedule-listing-item.schedule-right {
+      margin-top: 15px; 
+      }}
     .schedule-tabs-item .schedule-listing-item.schedule-right .schedule-slot-speakers {
       left: 30px; }
     .schedule-tabs-item .schedule-listing-item.schedule-right:before {
