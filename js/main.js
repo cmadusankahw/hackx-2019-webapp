@@ -76,7 +76,7 @@ setInterval(function() {
 
    if ($('.countdown').length > 0) {
       $(".countdown").jCounter({
-         date: '25 September 2019 12:00:00',
+         date: '25 August 2019 12:00:00',
          fallback: function () {
             console.log("count finished!")
          }
